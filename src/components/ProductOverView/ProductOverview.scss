@@ -1,0 +1,91 @@
+.product__overview{
+    &-block{
+        padding:20px;
+
+        .product{
+            &__img-wrap{
+                border: 1px solid #d7dce0;
+                border-radius: 4px;
+                flex-basis: 200px;
+            
+            }
+        }
+    }
+
+    &-wrap{
+        background-color:#fff;
+        border-radius: 4px;
+        padding:20px;
+    }
+}
+
+.product__details{
+    &-analysis{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: self-end;
+
+        &-list{
+            flex-basis: calc(100% - 230px);
+            // border: 1px solid;
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        &-item{
+            padding: 20px 10px;
+            flex-basis: 33.33%;
+            border-bottom: 1px solid #d7dce0;
+            text-align:center;
+            display: flex;
+            &:nth-last-child(-n+3) {
+                border-bottom:none;
+            }
+
+            &:nth-child(3n + 3){
+                .product__details-analysis-item--wrap{
+                    border-right: none;
+                }
+            }
+
+            &--wrap{
+                flex-grow: 1;
+                border-right: 1px solid #d7dce0;
+
+                
+
+            }
+        }
+
+    }
+}
+
+.product{
+    &__analysis{
+        font-weight: 700;
+        &-label{
+            font-size:14px;
+            color:#7b7875;
+            display: block;
+            font-weight: 700;
+        }
+
+        &-value{
+            color:#7b7875;
+            font-weight: 700;
+            display: block;
+            font-size:14px;
+            color:#3b68af;
+            line-height:1.2;
+            margin:5px 0;
+        }
+    }
+}
+
+.competitor-name{
+    font-size: 12px;
+    color: #7b7875;
+    display: block;
+    font-weight: 700;
+}

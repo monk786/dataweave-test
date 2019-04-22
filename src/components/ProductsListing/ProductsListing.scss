@@ -1,0 +1,213 @@
+.product__card{
+    padding:0px 20px 10px;
+    cursor: pointer;
+    &--current{
+        padding:0 10px 10px 10px;
+
+        .product__card-wrap--inner{
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+        }
+    }
+    &-wrap{
+        background-color:#fff;
+        border-radius:5px;
+        &--inner{
+            padding:20px;
+        }
+    }
+
+    &-details{
+        flex-basis: calc(100% - 110px);
+        max-width:calc(100% - 80px);
+        display: inline-block;
+    }
+
+    &-img-wrap{
+        max-width:75px;
+        display: inline-block;
+        border: 1px solid #d7dce0;
+        border-radius: 4px;
+    }
+
+
+}
+
+.product{
+
+    &__list{
+        &-block{
+            padding:10px 0;
+        }
+    }
+
+    
+    &__details{
+       
+        &-row{
+            font-size:13px;
+            color: #4e627b;
+            color: #30507d;
+            font-weight: 700;
+            // margin-bottom:5px;
+        }
+    }
+
+    &__name{
+        white-space: nowrap;
+        display: block;
+        text-overflow: ellipsis;
+        max-width: 90%;
+        overflow: hidden;
+        font-size:14px;
+        color:#000;
+    }
+
+    &__sku{
+        display: block;
+        margin:10px 0;
+        color: #717171;
+        font-weight: 700;
+    }
+}
+
+
+.increase__value{
+    color:#993d69;
+}
+
+
+
+.listing-action__block{
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #d7dce0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #e8f1f4;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+
+}
+
+.search__input-wrap{
+    flex-basis: calc(100% - 100px);
+    position: relative;
+    .icon{
+        position: absolute;
+        top:10px;
+        left:20px;
+    }
+
+    .search__input{
+        width:100%;
+        background-color: transparent;
+        border: none;
+        outline:none;
+        padding: 10px 10px 10px 45px;
+        font-size: 13px;
+
+        &:focus{
+            outline:none;
+        }
+    }
+}
+
+.listing-actions--sub{
+    flex-basis:50px;
+    border-left:1px solid #d7dce0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.sort__wrap{
+    &:hover{
+        .sort__select-list{
+            opacity: 1;
+            transform:translateX(-50%) translateY(0);
+            pointer-events:auto;
+        }
+    }
+}
+
+.sort__select-list{
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    /* text-align: center; */
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    /* margin-left: -150px; */
+    /* bottom: 0; */
+    bottom: -110px;
+    border-radius: 5px;
+    z-index: 10;
+    text-align:left;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+
+    opacity: 0;
+
+    transition:opacity .4s,transform .4s;
+    pointer-events:none;
+
+    &:before{
+        content:"";
+        display: block;
+        position: absolute;
+        border-top:5px solid transparent;
+        border-right: 5px solid transparent;
+        border-left:5px solid transparent;
+        border-bottom:5px solid #fff;
+        top:-10px;
+        left:50%;
+        margin-left:-6px;
+    }
+}
+
+.sort__options {
+    /* text-align: center; */
+    font-size: 12px;
+    padding: 8px 10px;
+    // background-color: #fff;
+    transition:background-color .4s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #eaf6fd;
+    }
+}
+// pagination css
+
+.pagination__block {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #e9f1f4;
+    z-index: 2;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+
+}
+
+.pagination__counter-wrap{
+    padding: 9px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #416b8c;
+    color: #416b8c;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+}

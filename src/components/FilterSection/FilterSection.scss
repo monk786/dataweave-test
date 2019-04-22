@@ -1,0 +1,40 @@
+.section{
+    &__header{
+        text-transform: uppercase;
+        font-weight:900;
+        font-size:16px;
+        padding:0 10px 20px 10px;
+        &--blue{
+            color:#3c4246;
+        }
+    }
+}
+
+
+.views{
+    &__block{
+        padding:28px 0;
+        border-bottom:1px solid #eeeeee;
+    }
+    &__item{
+        font-size:14px;
+        display:flex;
+        justify-content: space-between;
+        padding:8px 10px;
+        cursor:pointer;
+        transition:background-color .4s;
+
+        &:hover{
+            background-color:#eaf6fd;
+        }
+
+        &--active{
+            background-color:#eaf6fd;
+        }
+
+        &--product-count{
+            color:#6eb7b4;
+        }
+    }
+  
+}
